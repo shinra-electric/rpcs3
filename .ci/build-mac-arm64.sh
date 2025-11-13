@@ -5,6 +5,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_INSTALL_CLEANUP=1
+export CPLUS_INCLUDE_PATH="$PWD/3rdparty/OpenAL/openal-soft/fmt-11.2.0/include:$CPLUS_INCLUDE_PATH"
 
 brew install -f --overwrite --quiet ccache pipenv googletest ffmpeg@5 "llvm@$LLVM_COMPILER_VER" glew sdl3 vulkan-headers
 brew link -f --quiet "llvm@$LLVM_COMPILER_VER" ffmpeg@5
